@@ -195,13 +195,13 @@ Answer the following questions about multi-container deployment:
 
 Create two new users: Amanda and Ryan.   
 
-![Step1.png](images/step1.png)
+![Step1.png](images/Step1.png)
 
 #### Step 2: Baselining
 
 For these "baselining" steps, you'll want to log into two different types of accounts to see how the WordPress site looks at the `localhost:8080/wp-admin/users.php` page.  We want to see how the Users page looks from the perspective of an administrator, vs. a regular user.
 
-![Step2.png](images/step2.png)
+![Step2.png](images/Step2.png)
 
 #### Step 3: Using Forms and a Cookie Jar
 
@@ -212,13 +212,13 @@ Navigate to `~/Documents` in a terminal to save your cookies.
     - **Question:** Did you see any obvious confirmation of a login? (Y/N)
         - Yes
 
-![Step3a.png](images/step3a.png)
+![Step3a.png](images/Step3a.png)
 
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
 
-![Step3b1.png](images/step3b1.png)
-![Step3b2.png](images/step3b2.png)
+![Step3b1.png](images/Step3b1.png)
+![Step3b2.png](images/Step3b2.png)
 
 3. Read the contents of the `ryancookies.txt` file.
 
@@ -241,13 +241,13 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
     - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
         - Yes
 
-![Step4a.png](images/step4a.png)
+![Step4a.png](images/Step4a.png)
 
 #### Step 5: Test the Users.php Page
 
 1. Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
 
-![Step5.png](images/step5.png)
+![Step5.png](images/Step5.png)
 
     - **Question:** What happens this time?
         - It shows a similar page to when a user requires a higher permission to view a page.
