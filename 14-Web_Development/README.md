@@ -212,17 +212,17 @@ Navigate to `~/Documents` in a terminal to save your cookies.
     - **Question:** Did you see any obvious confirmation of a login? (Y/N)
         - Yes
 
-![Step3a.png](images/Step3a.png)
+    ![Step3a.png](images/Step3a.png)
 
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
 
-![Step3b1.png](images/Step3b1.png)
-![Step3b2.png](images/Step3b2.png)
+    ![Step3b1.png](images/Step3b1.png)
+    ![Step3b2.png](images/Step3b2.png)
 
 3. Read the contents of the `ryancookies.txt` file.
 
-![Step3c.png](images/Step3c.png)
+    ![Step3c.png](images/Step3c.png)
 
    - **Question:** How many items exist in this file?
         - 3
@@ -241,13 +241,13 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
     - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
         - Yes
 
-![Step4a.png](images/Step4a.png)
+    ![Step4a.png](images/Step4a.png)
 
 #### Step 5: Test the Users.php Page
 
 1. Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
 
-![Step5.png](images/Step5.png)
-
     - **Question:** What happens this time?
         - It shows a similar page to when a user requires a higher permission to view a page.
+
+    ![Step5.png](images/Step5.png)
