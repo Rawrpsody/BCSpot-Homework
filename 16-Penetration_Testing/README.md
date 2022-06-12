@@ -36,24 +36,18 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 Is Altoro Mutual vulnerable to XSS:
   - Yes
+  ![AltoroMutualXSSED](images/AltoroMutualXSSED.png)
 
 ### Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
-- Command for Zenmap to run a service scan against the Metasploitable machine: 
- 
-- Bonus command to output results into a new text file named `zenmapscan.txt`:
-
-- Zenmap vulnerability script command: 
+- using ```nmap -sV -sC -oN /root/Desktop/nmapscan.txt 192.168.0.10``` to run nmap against the Metasploit VM outputs the vulnerabilities [nmapscan.txt](images/nmapscan.txt)
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
-
+    - ftp-anon
   2. Why is it dangerous:
-
+    - This vulnerability creates an access to the machine that bypasses the login password.
   3. What mitigation strategies can you recommendations for the client to protect their server:
-
----
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
-
+    - Disable anonymous log access with the FTP server.
