@@ -28,6 +28,3 @@
   - A user input should go through sanitation techniques when it goes in any way of client and server so that the script that may hook a web browser may come through from any direction but wont be ran and be seen as plain text or just be removed entirely. 
     
 ---
-
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
